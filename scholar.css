@@ -26,6 +26,9 @@ width:400px;
  -moz-box-sizing: border-box;
  box-sizing: border-box;
 }
+.eja {
+  color: #F7D757;
+}
 
 body {
  padding: 20px 15%;

@@ -11,7 +11,7 @@
 //}
 //});
 //}
-var Volunteers = new Meteor.Collection('volunteers');
+Volunteers = new Meteor.Collection('volunteers');
 
 
 if (Meteor.isClient) {
@@ -34,16 +34,12 @@ if (Meteor.isClient) {
       why: why.value
     };
 
-    email.value="";
-    firstname.value="";
-    lastname.value="";
-
-      name.value=""
-      email.value=""
-      linked_in.value=""
-      phone_number.value=""
-      area_of_interest.value=""
-      why.value=""
+    name.value=""
+    email.value=""
+    linked_in.value=""
+    phone_number.value=""
+    area_of_interest.value=""
+    why.value=""
 
     Volunteers.insert(data, function(err) { /* handle error */ });
   }});

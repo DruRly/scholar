@@ -8,18 +8,34 @@
 
 <template name="hello">
     <form id="myform">
-        <input type="text" name="name" placeholder="Name"/>
+        <input type="text" id="name" placeholder="Name"/>
         <br/>
-        <input type="text" name="email_address" placeholder="Email Address"/>
+        <input type="text" id="email_address" placeholder="Email Address"/>
         <br/>
-        <input type="text" name="linked_in" placeholder="LinkedIn Url"/>
+        <input type="text" id="linked_in" placeholder="LinkedIn Url"/>
         <br/>
-        <input type="text" name="phone_number" placeholder="Phone Number"/>
+        <input type="text" id="phone_number" placeholder="Phone Number"/>
         <br/>
-        <input type="text" name="area_of_interest" placeholder="Area of Interest"/>
+        <input type="text" id="area_of_interest" placeholder="Area of Interest"/>
         <br/>
-        <textarea type="text" name="why" placeholder="I want to volunteer because..."/>
+        <textarea type="text" id="why" placeholder="I want to volunteer because..."/>
         <br/>
         <input type="submit" id="submit"/>
     </form>
+</template>
+
+<template name="success">
+<div>
+  {{name}}
+  <br/>
+  {{email}}
+  <br/>
+  {{linked_in}}
+  <br/>
+  {{phone_number}}
+  <br/>
+  {{area_of_interest}}
+  <br/>
+  {{why}}
+</div>
 </template>

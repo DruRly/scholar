@@ -7,6 +7,9 @@
 </body>
 
 <template name="hello">
+     <h1>The Scholarship Academy</h1>
+     <div>We need volunteers! Register below to be paired with one of the students at the Scholarship Academy and join our success family.</div>
+     <br/>
     <form id="myform">
         <input type="text" id="name" placeholder="Name"/>
         <br/>
@@ -26,16 +29,15 @@
 
 <template name="success">
 <div>
-  {{name}}
-  <br/>
-  {{email}}
-  <br/>
-  {{linked_in}}
-  <br/>
-  {{phone_number}}
-  <br/>
-  {{area_of_interest}}
-  <br/>
-  {{why}}
+  Thanks for Applying!
+
+  <p>Share with others</p>
+  <p>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="I just applied to volunteer @scholarshipacad" data-hashtags="GoodieHack">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </p>
+
+
 </div>
+Created at GoodieHack.com
 </template>

@@ -1,19 +1,25 @@
 <head>
-  <title>scholar</title>
+<title>scholar</title>
 </head>
 
 <body>
-  {{> hello}}
+{{> hello}}
 </body>
 
 <template name="hello">
-  <input class="name" placeholder="Name"></input>
-  <br/>
-  <input class="linked_in" placeholder="Linked In URL"></input>
-  <br/>
-  <input class="phone_number" placeholder="Phone Number"></input>
-  <br/>
-  <textarea class="why" placeholder="I am interested because.."></textarea>
-  <br/>
-  <input type="button" value="Help Out" />
+    <form id="myform">
+        <input type="text" name="name" placeholder="Name"/>
+        <br/>
+        <input type="text" name="email_address" placeholder="Email Address"/>
+        <br/>
+        <input type="text" name="linked_in" placeholder="LinkedIn Url"/>
+        <br/>
+        <input type="text" name="phone_number" placeholder="Phone Number"/>
+        <br/>
+        <input type="text" name="area_of_interest" placeholder="Area of Interest"/>
+        <br/>
+        <textarea type="text" name="why" placeholder="I want to volunteer because..."/>
+        <br/>
+        <input type="submit" id="submit"/>
+    </form>
 </template>

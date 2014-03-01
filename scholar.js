@@ -42,6 +42,15 @@ if (Meteor.isClient) {
     why.value=""
 
     Volunteers.insert(data, function(err) { /* handle error */ });
+
+    //email address 
+    //"Name:" + data.name + "<br/>
+    //"Email:" + data.email + "<br/>
+    //"LinkedIn:" + data.linked_in + "<br/>
+    //"Phone Number:" + data.phone_number + "<br/>
+    //"Area of Interest:" + data.area_of_interest + "<br/>
+    //"Why:" + data.why + "<br/>
+
     var email_params = {
       from: "scholar@drurly.com",
       to: "rileydru5@gmail.com",

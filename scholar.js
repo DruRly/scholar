@@ -42,5 +42,12 @@ if (Meteor.isClient) {
     why.value=""
 
     Volunteers.insert(data, function(err) { /* handle error */ });
+    var email_params = {
+      from: "scholar@drurly.com",
+      to: "rileydru5@gmail.com",
+      subject: "test",
+      html: "test"
+    }
+    Email.send(email_params)
   }});
 }
